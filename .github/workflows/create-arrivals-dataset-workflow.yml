@@ -18,7 +18,7 @@ jobs:
           echo "YEAR=$(date +'%Y')" >> $GITHUB_ENV
           echo "MONTH=$(date +'%m')" >> $GITHUB_ENV
           echo "DAY=$(date +'%d')" >> $GITHUB_ENV
-          echo "WORKFLOW_RUN_TIMESTAMP=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+          echo "WORKFLOW_RUN_TIMESTAMP=$(date -u +'%Y-%m-%dT%H-%M-%SZ')" >> $GITHUB_ENV
 
       - name: Check out CFR data
         uses: actions/checkout@v6
