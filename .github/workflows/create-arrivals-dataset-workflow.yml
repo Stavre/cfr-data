@@ -12,14 +12,23 @@ jobs:
           java-version: "25"
 
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out CFR adapter
+
+      - name: Check out CFR api adapter
         uses: actions/checkout@v6
         with:
           repository: "Stavre/cfr-api-adapter"
 
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - name: Check out CFR data aggregator
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data-aggregator"
+
+      - name: Starting CFR api adapter backend
+        run: /home/runner/work/cfr-api-adapter/gradlew bootRun
+
+      - name: Creating dataset using CFR data aggregator
+        run: /home/runner/work/cfr-data-aggregator/gradlew bootRun --args="export-arrivals"
+
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
