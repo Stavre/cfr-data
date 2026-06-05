@@ -29,8 +29,14 @@ jobs:
         run: |
           ls ${{ github.workspace }}
 
+      - name: Set up CFR api adapter as current directory
+        run: cd cfr-api-adapter
+
       - name: Starting CFR api adapter backend
         run: ./cfr-api-adapter/gradlew bootRun
+
+      - name: Set up CFR data aggregator as current directory
+        run: cd ../cfr-data-aggregator
 
       - name: Creating dataset using CFR data aggregator
         run: ./cfr-data-aggregator/gradlew bootRun --args="export-arrivals"
