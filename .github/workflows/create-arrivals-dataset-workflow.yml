@@ -30,10 +30,10 @@ jobs:
           ls ${{ github.workspace }}
 
       - name: Starting CFR api adapter backend
-        run: /home/runner/work/cfr-api-adapter/gradlew bootRun
+        run: ./cfr-api-adapter/gradlew bootRun
 
       - name: Creating dataset using CFR data aggregator
-        run: /home/runner/work/cfr-data-aggregator/gradlew bootRun --args="export-arrivals"
+        run: ./cfr-data-aggregator/gradlew bootRun --args="export-arrivals"
 
       - name: List files in the repository
         run: |
