@@ -56,7 +56,7 @@ jobs:
           git config --global user.email 'alinstavre@gmail.com'
           git commit -am "Automated report"
           git push
-        working-directory: ${{ github.workspace }}
+        working-directory: ./cfr-data-aggregator
 
       - name: List files in the repository
         run: |
