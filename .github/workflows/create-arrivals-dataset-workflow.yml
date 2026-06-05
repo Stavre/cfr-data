@@ -32,8 +32,11 @@ jobs:
       - name: Set up CFR api adapter as current directory
         run: cd cfr-api-adapter
 
+      - name: Current directory
+        run: pwd
+
       - name: Starting CFR api adapter backend
-        run: ./cfr-api-adapter/gradlew bootRun
+        run: ./gradlew bootRun
 
       - name: Set up CFR data aggregator as current directory
         run: cd ../cfr-data-aggregator
