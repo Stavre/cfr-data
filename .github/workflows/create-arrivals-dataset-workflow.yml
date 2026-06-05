@@ -61,8 +61,8 @@ jobs:
 
       - name: Commit raw arrivals and departures csv file
         run: |
-          git config --global user.name 'Stavre'
-          git config --global user.email 'alinstavre@gmail.com'
+          git config --global user.name '${{ github.actor }}'
+#          git config --global user.email 'alinstavre@gmail.com'
           git add --all
           git commit -am "Automated report"
           git push
