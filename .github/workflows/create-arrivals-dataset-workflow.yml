@@ -1,6 +1,8 @@
 name: Create train arrivals dataset workflow
 run-name: ${{ github.actor }} is creating a new train arrivals dataset
 on: [push]
+permissions:
+  contents: write
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -23,6 +25,7 @@ jobs:
         with:
           repository: "Stavre/cfr-data"
           path: "cfr-data"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check out CFR api adapter
         uses: actions/checkout@v6
