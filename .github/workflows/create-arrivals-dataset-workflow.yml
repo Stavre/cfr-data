@@ -30,7 +30,10 @@ jobs:
           ls ${{ github.workspace }}
 
       - name: Starting CFR api adapter backend
-        run: ./gradlew bootRun
+        run: |
+          ./gradlew bootRun &
+          echo "Waiting for server to be ready..."
+          timeout 120 bash -c 'until curl -sf http://localhost:8080/actuator/health; do sleep 3; done'
         working-directory: ./cfr-api-adapter
 
       - name: Creating dataset using CFR data aggregator
