@@ -17,11 +17,13 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: "Stavre/cfr-api-adapter"
+          path: "cfr-api-adapter"
 
       - name: Check out CFR data aggregator
         uses: actions/checkout@v6
         with:
           repository: "Stavre/cfr-data-aggregator"
+          path: "cfr-data-aggregator"
 
       - name: List files in the repository
         run: |
