@@ -65,6 +65,7 @@ jobs:
 #          git config --global user.email 'alinstavre@gmail.com'
           git add --all
           git commit -am "Automated report"
+          git pull --rebase origin main
           git push
         working-directory: ./cfr-data
 
