@@ -23,6 +23,10 @@ jobs:
         with:
           repository: "Stavre/cfr-data-aggregator"
 
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+
       - name: Starting CFR api adapter backend
         run: /home/runner/work/cfr-api-adapter/gradlew bootRun
 
