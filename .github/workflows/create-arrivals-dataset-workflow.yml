@@ -103,6 +103,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: "Stavre/cfr-data"
+          ref: ${{ github.ref_name }}
           path: "cfr-data"
           token: ${{ secrets.GITHUB_TOKEN }}
 
