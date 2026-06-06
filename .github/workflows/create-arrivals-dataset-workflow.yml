@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-      - cron: '*/10 * * * *'
+    - cron: '*/10 * * * *'
 
 permissions:
   contents: write
@@ -25,12 +25,70 @@ jobs:
           echo "day=$(date +'%d')" >> $GITHUB_OUTPUT
           echo "workflow_run_timestamp=$(date -u +'%Y-%m-%dT%H-%M-%SZ')" >> $GITHUB_OUTPUT
 
+  Create-raw-station-dataset:
+    runs-on: ubuntu-latest
+    needs:
+      - Set-workflow-variables
+    steps:
+      - name: Setup java
+        uses: actions/setup-java@v5
+        with:
+          distribution: "corretto"
+          java-version: "25"
+
+      - name: Check out CFR data
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data"
+          path: "cfr-data"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check out CFR api adapter
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-api-adapter"
+          path: "cfr-api-adapter"
+
+      - name: Check out CFR data aggregator
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data-aggregator"
+          path: "cfr-data-aggregator"
+
+      - name: Set gradlew permission - cfr-api-adapter
+        run: chmod +x ./gradlew
+        working-directory: ./cfr-api-adapter
+
+      - name: Starting CFR api adapter backend
+        run: ./gradlew bootRun &
+        working-directory: ./cfr-api-adapter
+
+      - name: Wait for CFR api adapter backend to start
+        run: timeout 120 bash -c 'until curl -sf http://localhost:8080/actuator/health; do sleep 3; done'
+        working-directory: ./cfr-api-adapter
+
+      - name: Set gradlew permission - cfr-data-aggregator
+        run: chmod +x ./gradlew
+        working-directory: ./cfr-data-aggregator
+
+      - name: Creating dataset using CFR data aggregator
+        run: ./gradlew bootRun --args="export-arrivals-departures --stations='Arad,Adjud' --output='../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv'"
+        working-directory: ./cfr-data-aggregator
+
+      - name: Commit raw arrivals and departures csv file
+        run: |
+          git config --global user.name '${{ github.actor }}'
+          git add --all
+          git commit -am "Automated report"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
+        working-directory: ./cfr-data
 
   Create-aggregated-station-delay-dataset:
     runs-on: ubuntu-latest
     needs:
       - Set-workflow-variables
-#      - Create-raw-station-dataset
+      - Create-raw-station-dataset
     steps:
       - name: Setup java
         uses: actions/setup-java@v5
@@ -54,13 +112,11 @@ jobs:
       - name: Set gradlew permission - cfr-data-aggregator
         run: chmod +x ./gradlew
         working-directory: ./cfr-data-aggregator
+
       - name: Creating dataset using CFR data aggregator
         env:
-          INPUT_PATH: "../cfr-data/raw/2026/06/06/station/2026-06-06T12-05-47Z.csv"
-        run: |
-          pwd
-          ls
-          ./gradlew bootRun --args="aggregate-delays --stations='Arad,Adjud' --input-file='$INPUT_PATH' -p '../cfr-data/aggregated/2026/06/station'"
+          INPUT_PATH: "../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv"
+        run: ./gradlew bootRun --args="aggregate-delays --stations='Arad,Adjud' --input-file='$INPUT_PATH' -p '../cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station'"
         working-directory: ./cfr-data-aggregator
 
       - name: Commit raw aggregated arrivals and departures delay csv file
@@ -71,6 +127,3 @@ jobs:
           git pull --rebase origin ${{ github.ref_name }}
           git push
         working-directory: ./cfr-data
-
-#        ../cfr-data/raw/2026/06/06/station/2026-06-06T11-07-05Z.csv
-#        ../cfr-data/raw/2026/06/06/station/2026-06-06T11-07-05Z.csv
