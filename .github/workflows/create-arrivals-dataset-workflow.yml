@@ -118,7 +118,7 @@ jobs:
         working-directory: ./cfr-data-aggregator
 
       - name: Debug directory structure
-        run: tree ../../..
+        run: tree ../..
 
       - name: Creating dataset using CFR data aggregator
         env:
