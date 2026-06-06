@@ -56,7 +56,7 @@ jobs:
         working-directory: ./cfr-data-aggregator
       - name: Creating dataset using CFR data aggregator
         env:
-          INPUT_PATH: "../raw/2026/06/06/station/2026-06-06T12-05-47Z.csv"
+          INPUT_PATH: "../cfr-data/raw/2026/06/06/station/2026-06-06T12-05-47Z.csv"
         run: |
           pwd
           ls
