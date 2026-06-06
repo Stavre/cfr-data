@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is creating a new train arrivals dataset
 on:
   push:
   schedule:
-      - cron: '19 9 * * *'
+      - cron: '*/5 * * * *'
 
 permissions:
   contents: write
