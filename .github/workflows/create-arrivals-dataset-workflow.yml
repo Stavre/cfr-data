@@ -3,12 +3,12 @@ run-name: ${{ github.actor }} is creating a new train arrivals dataset
 on:
   workflow_dispatch:
   schedule:
-      - cron: '*/5 * * * *'
+      - cron: '*/10 * * * *'
 
 permissions:
   contents: write
 jobs:
-  Explore-GitHub-Actions:
+  Create-raw-station-dataset:
     runs-on: ubuntu-latest
     steps:
       - name: Setup java
