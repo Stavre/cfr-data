@@ -120,7 +120,7 @@ jobs:
         env:
           INPUT_PATH: "./cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv"
 
-        run: ../cfr-data-aggregator/gradlew bootRun --args="aggregate-delays --stations='Arad,Adjud' --input-file='$INPUT_PATH' -p './cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station'"
+        run: ./cfr-data-aggregator/gradlew bootRun --args="aggregate-delays --stations='Arad,Adjud' --input-file='$INPUT_PATH' -p './cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station'"
 
 
       - name: Commit raw aggregated arrivals and departures delay csv file
