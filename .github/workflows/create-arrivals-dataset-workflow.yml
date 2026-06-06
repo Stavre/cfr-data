@@ -118,7 +118,6 @@ jobs:
           tree
           pwd
           ls
-        working-directory: .
 
       - name: Creating dataset using CFR data aggregator
         env:
