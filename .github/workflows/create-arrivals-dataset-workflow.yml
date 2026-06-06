@@ -7,6 +7,10 @@ on:
         description: "stations to process. 'all' for all stations, list of values for subset of stations"
         required: false
         default: 'all'
+      cfr_date:
+        description: "Date to process. Accepts 'today', 'yesterday', or a date in DD.MM.YYYY format (e.g. 09.05.2020)"
+        required: false
+        default: 'yesterday'
   schedule:
     - cron: '*/45 * * * *'
 
@@ -24,9 +28,17 @@ jobs:
       - name: Set date/time variables
         id: set-vars
         run: |
-          echo "year=$(date +'%Y')" >> $GITHUB_OUTPUT
-          echo "month=$(date +'%m')" >> $GITHUB_OUTPUT
-          echo "day=$(date +'%d')" >> $GITHUB_OUTPUT
+          INPUT_DATE="${{ inputs.cfr_date || 'yesterday' }}"
+          if [ "$INPUT_DATE" = "today" ]; then
+            TARGET_DATE=$(date +'%Y-%m-%d')
+          elif [ "$INPUT_DATE" = "yesterday" ]; then
+            TARGET_DATE=$(date -d 'yesterday' +'%Y-%m-%d')
+          else
+            TARGET_DATE=$(date -d "$(echo "$INPUT_DATE" | awk -F. '{print $3"-"$2"-"$1}')" +'%Y-%m-%d')
+          fi
+          echo "year=$(date -d "$TARGET_DATE" +'%Y')" >> $GITHUB_OUTPUT
+          echo "month=$(date -d "$TARGET_DATE" +'%m')" >> $GITHUB_OUTPUT
+          echo "day=$(date -d "$TARGET_DATE" +'%d')" >> $GITHUB_OUTPUT
           echo "workflow_run_timestamp=$(date -u +'%Y-%m-%dT%H-%M-%SZ')" >> $GITHUB_OUTPUT
 
   Create-raw-station-dataset:
