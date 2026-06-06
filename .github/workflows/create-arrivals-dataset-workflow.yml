@@ -1,6 +1,7 @@
 name: Create train arrivals dataset workflow
 run-name: ${{ github.actor }} is creating a new train arrivals dataset
 on:
+  push:
   workflow_dispatch:
   schedule:
       - cron: '*/10 * * * *'
