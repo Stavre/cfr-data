@@ -36,10 +36,18 @@ jobs:
           else
             TARGET_DATE=$(date -d "$(echo "$INPUT_DATE" | awk -F. '{print $3"-"$2"-"$1}')" +'%Y-%m-%d')
           fi
-          echo "year=$(date -d "$TARGET_DATE" +'%Y')" >> $GITHUB_OUTPUT
-          echo "month=$(date -d "$TARGET_DATE" +'%m')" >> $GITHUB_OUTPUT
-          echo "day=$(date -d "$TARGET_DATE" +'%d')" >> $GITHUB_OUTPUT
-          echo "workflow_run_timestamp=$(date -u +'%Y-%m-%dT%H-%M-%SZ')" >> $GITHUB_OUTPUT
+          YEAR=$(date -d "$TARGET_DATE" +'%Y')
+          MONTH=$(date -d "$TARGET_DATE" +'%m')
+          DAY=$(date -d "$TARGET_DATE" +'%d')
+          TIMESTAMP=$(date -u +'%Y-%m-%dT%H-%M-%SZ')
+          echo "year=$YEAR" >> $GITHUB_OUTPUT
+          echo "month=$MONTH" >> $GITHUB_OUTPUT
+          echo "day=$DAY" >> $GITHUB_OUTPUT
+          echo "workflow_run_timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+          echo "year=$YEAR"
+          echo "month=$MONTH"
+          echo "day=$DAY"
+          echo "workflow_run_timestamp=$TIMESTAMP"
 
   Create-raw-station-dataset:
     runs-on: ubuntu-latest
@@ -89,7 +97,7 @@ jobs:
         working-directory: ./cfr-data-aggregator
 
       - name: Creating dataset using CFR data aggregator
-        run: ./gradlew bootRun --args="export-arrivals-departures --stations='${{ inputs.stations || 'all' }}' --output='../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv'"
+        run: ./gradlew bootRun --args="export-arrivals-departures --date='${{ needs.Set-workflow-variables.outputs.day }}.${{ needs.Set-workflow-variables.outputs.month }}.${{ needs.Set-workflow-variables.outputs.year }}' --stations='${{ inputs.stations || 'all' }}' --output='../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv'"
         working-directory: ./cfr-data-aggregator
 
       - name: Commit raw arrivals and departures csv file
@@ -100,9 +108,6 @@ jobs:
           git pull --rebase origin ${{ github.ref_name }}
           git push
         working-directory: ./cfr-data
-
-      - name: Wait
-        run: sleep 60
 
   Create-aggregated-station-delay-dataset:
     runs-on: ubuntu-latest
@@ -137,7 +142,7 @@ jobs:
       - name: Creating dataset using CFR data aggregator
         env:
           INPUT_PATH: "../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv"
-        run: ./gradlew bootRun --args="aggregate-delays --stations='${{ inputs.stations || 'all' }}' --input-file='$INPUT_PATH' -p '../cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station'"
+        run: ./gradlew bootRun --args="aggregate-delays  --stations='${{ inputs.stations || 'all' }}' --input-file='$INPUT_PATH' -p '../cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station'"
         working-directory: ./cfr-data-aggregator
 
       - name: Commit raw aggregated arrivals and departures delay csv file
