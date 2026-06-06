@@ -117,6 +117,9 @@ jobs:
         run: chmod +x ./gradlew
         working-directory: ./cfr-data-aggregator
 
+      - name: Debug directory structure
+        run: tree ../../..
+
       - name: Creating dataset using CFR data aggregator
         env:
           INPUT_PATH: "../../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv"
