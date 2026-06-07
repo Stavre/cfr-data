@@ -1,0 +1,162 @@
+name: Create stations list workflow
+run-name: ${{ github.actor }} is creating a new stations list
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  Create-stations-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup java
+        uses: actions/setup-java@v5
+        with:
+          distribution: "corretto"
+          java-version: "25"
+
+      - name: Check out CFR api adapter
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-api-adapter"
+          path: "cfr-api-adapter"
+
+      - name: Check out CFR data aggregator
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data-aggregator"
+          path: "cfr-data-aggregator"
+
+      - name: Set gradlew permission - cfr-api-adapter
+        run: chmod +x ./gradlew
+        working-directory: ./cfr-api-adapter
+
+      - name: Starting CFR api adapter backend
+        run: ./gradlew bootRun &
+        working-directory: ./cfr-api-adapter
+
+      - name: Wait for CFR api adapter backend to start
+        run: timeout 120 bash -c 'until curl -sf http://localhost:8080/actuator/health; do sleep 3; done'
+        working-directory: ./cfr-api-adapter
+
+      - name: Set gradlew permission - cfr-data-aggregator
+        run: chmod +x ./gradlew
+        working-directory: ./cfr-data-aggregator
+
+      - name: Export stations list using CFR data aggregator
+        run: ./gradlew bootRun --args="export-stations --output='../stations.csv'"
+        working-directory: ./cfr-data-aggregator
+
+      - name: Upload stations list as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stations-list
+          path: stations.csv
+
+  Check-stations-list:
+    runs-on: ubuntu-latest
+    needs:
+      - Create-stations-list
+    outputs:
+      changes_detected: ${{ steps.compare.outputs.changes_detected }}
+
+    steps:
+      - name: Check out CFR data
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data"
+          path: "cfr-data"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download stations list artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: stations-list
+          path: stations-list
+
+      - name: Compare stations list with latest version
+        id: compare
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LATEST="cfr-data/stations/latest/stations.csv"
+          NEW="stations-list/stations.csv"
+          if [ ! -f "$LATEST" ]; then
+            echo "Latest stations file does not exist. Changes detected."
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          elif diff -q "$NEW" "$LATEST" > /dev/null; then
+            echo "Stations list is unchanged. Removing artifact."
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
+            ARTIFACT_ID=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts \
+              --jq '.artifacts[] | select(.name == "stations-list") | .id')
+            gh api repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID -X DELETE
+          else
+            echo "Stations list has changed. Proceeding to reconciliation."
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          fi
+
+  Reconcile-stations-list:
+    runs-on: ubuntu-latest
+    needs:
+      - Check-stations-list
+    if: needs.Check-stations-list.outputs.changes_detected == 'true'
+
+    steps:
+      - name: Set timestamp
+        id: set-timestamp
+        run: echo "timestamp=$(date -u +'%Y-%m-%dT%H-%M-%SZ')" >> $GITHUB_OUTPUT
+
+      - name: Setup java
+        uses: actions/setup-java@v5
+        with:
+          distribution: "corretto"
+          java-version: "25"
+
+      - name: Check out CFR data
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data"
+          ref: ${{ github.ref_name }}
+          path: "cfr-data"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check out CFR data aggregator
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data-aggregator"
+          path: "cfr-data-aggregator"
+
+      - name: Download stations list artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: stations-list
+          path: stations-list
+
+      - name: Save new stations snapshot to historical directory
+        run: |
+          mkdir -p cfr-data/stations/historical
+          cp stations-list/stations.csv "cfr-data/stations/historical/${{ steps.set-timestamp.outputs.timestamp }}.csv"
+
+      - name: Set gradlew permission - cfr-data-aggregator
+        run: chmod +x ./gradlew
+        working-directory: ./cfr-data-aggregator
+
+      - name: Reconcile stations list
+        run: |
+          mkdir -p ../cfr-data/stations/latest
+          ./gradlew bootRun --args="reconcile-stations -b '../cfr-data/stations/latest/stations.csv' -n '../cfr-data/stations/historical/${{ steps.set-timestamp.outputs.timestamp }}.csv'"
+        working-directory: ./cfr-data-aggregator
+
+      - name: Commit stations list changes
+        run: |
+          git config --global user.name '${{ github.actor }}'
+          git add --all
+          git commit -am "Automated report"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
+        working-directory: ./cfr-data
