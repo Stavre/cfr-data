@@ -1,5 +1,5 @@
-name: Create train arrivals dataset workflow
-run-name: ${{ github.actor }} is creating a new train arrivals dataset
+name: Create raw station dataset workflow
+run-name: ${{ github.actor }} is creating a new raw station dataset
 on:
   workflow_dispatch:
     inputs:
@@ -16,7 +16,7 @@ on:
         required: false
         default: 'Europe/Bucharest'
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */3 * * *'
 
 permissions:
   contents: write
@@ -54,10 +54,37 @@ jobs:
           echo "day=$DAY"
           echo "workflow_run_timestamp=$TIMESTAMP"
 
-  Create-raw-station-dataset:
+  Check-raw-file-exists:
     runs-on: ubuntu-latest
     needs:
       - Set-workflow-variables
+    outputs:
+      file_exists: ${{ steps.check-existing-file.outputs.file_exists }}
+    steps:
+      - name: Check out CFR data
+        uses: actions/checkout@v6
+        with:
+          repository: "Stavre/cfr-data"
+          path: "cfr-data"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if raw file already exists for date
+        id: check-existing-file
+        run: |
+          if ls cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/*.csv 2>/dev/null | grep -q .; then
+            echo "file_exists=true" >> $GITHUB_OUTPUT
+            echo "Raw file already exists for this date, skipping export."
+          else
+            echo "file_exists=false" >> $GITHUB_OUTPUT
+            echo "No raw file found for this date, proceeding with export."
+          fi
+
+  Create-raw-station-dataset:
+    runs-on: ubuntu-latest
+    if: needs.Check-raw-file-exists.outputs.file_exists != 'true'
+    needs:
+      - Set-workflow-variables
+      - Check-raw-file-exists
 
     steps:
       - name: Setup java
@@ -106,54 +133,6 @@ jobs:
         working-directory: ./cfr-data-aggregator
 
       - name: Commit raw arrivals and departures csv file
-        run: |
-          git config --global user.name '${{ github.actor }}'
-          git add --all
-          git commit -am "Automated report"
-          git pull --rebase origin ${{ github.ref_name }}
-          git push
-        working-directory: ./cfr-data
-
-  Create-aggregated-station-delay-dataset:
-    runs-on: ubuntu-latest
-    needs:
-      - Set-workflow-variables
-      - Create-raw-station-dataset
-    steps:
-      - name: Setup java
-        uses: actions/setup-java@v5
-        with:
-          distribution: "corretto"
-          java-version: "25"
-
-      - name: Check out CFR data
-        uses: actions/checkout@v6
-        with:
-          repository: "Stavre/cfr-data"
-          ref: ${{ github.ref_name }}
-          path: "cfr-data"
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Check out CFR data aggregator
-        uses: actions/checkout@v6
-        with:
-          repository: "Stavre/cfr-data-aggregator"
-          path: "cfr-data-aggregator"
-
-      - name: Set gradlew permission - cfr-data-aggregator
-        run: chmod +x ./gradlew
-        working-directory: ./cfr-data-aggregator
-
-      - name: Creating dataset using CFR data aggregator
-        env:
-          INPUT_PATH: "../cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/${{ needs.Set-workflow-variables.outputs.workflow_run_timestamp }}.csv"
-          OUTPUT_BASE_PATH: "../cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station"
-        run: |
-          echo $INPUT_PATH
-          ./gradlew bootRun --args="aggregate-delays  --stations='${{ inputs.stations || 'all' }}' --input-file='$INPUT_PATH' -p '$OUTPUT_BASE_PATH'"
-        working-directory: ./cfr-data-aggregator
-
-      - name: Commit raw aggregated arrivals and departures delay csv file
         run: |
           git config --global user.name '${{ github.actor }}'
           git add --all
