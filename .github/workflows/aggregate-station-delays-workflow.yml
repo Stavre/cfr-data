@@ -82,6 +82,8 @@ jobs:
       - name: Find latest raw file for date
         id: find-latest-raw-file
         run: |
+          pwd
+          ls
           RAW_FILE_INPUT="${{ inputs.raw_file || 'latest' }}"
           if [ "$RAW_FILE_INPUT" = "latest" ]; then
             RAW_FILE=$(ls -t cfr-data/raw/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/${{ needs.Set-workflow-variables.outputs.day }}/station/*.csv 2>/dev/null | head -1)
