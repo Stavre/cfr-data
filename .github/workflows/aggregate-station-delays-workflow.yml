@@ -99,9 +99,11 @@ jobs:
 
       - name: Creating aggregated delay dataset
         env:
-          INPUT_PATH: "../cfr-data/${{ steps.find-latest-raw-file.outputs.raw_file }}"
+          INPUT_PATH: "../${{ steps.find-latest-raw-file.outputs.raw_file }}"
           OUTPUT_BASE_PATH: "../cfr-data/aggregated/${{ needs.Set-workflow-variables.outputs.year }}/${{ needs.Set-workflow-variables.outputs.month }}/station"
         run: |
+          ls
+          pwd
           echo $INPUT_PATH
           ./gradlew bootRun --args="aggregate-delays --stations='${{ inputs.stations || 'all' }}' --input-file='$INPUT_PATH' -p '$OUTPUT_BASE_PATH'"
         working-directory: ./cfr-data-aggregator
