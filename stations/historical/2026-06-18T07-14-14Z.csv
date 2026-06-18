@@ -1,0 +1,1701 @@
+name,isImportant
+Adjud,false
+"Aeroport Henri Coandă",false
+Aghireș,false
+Aiud,false
+"Alba Iulia",false
+Aleșd,false
+Alexandria,false
+Anina,false
+Apahida,false
+Arad,false
+Avrig,false
+Azuga,false
+Babadag,false
+Bacău,false
+"Baia Mare",false
+Balș,false
+Barboși,false
+Basarabi,false
+Băbeni,false
+"Băile Herculane",false
+"Băile Ocna Sibiului hc",false
+"Băile Tușnad Hm",false
+Băilești,false
+Bârlad,false
+"Beclean pe Someș",false
+Bicaz,false
+"Bistrița Nord",false
+Blaj,false
+Botoșani,false
+Brad,false
+Brașov,false
+Brăila,false
+"Breaza hc",false
+Bucecea,false
+"București Nord",false
+"București Obor",false
+Buftea,false
+Buhăiești,false
+Buhuși,false
+Bușteni,false
+Buzău,false
+Buziaș,false
+Calafat,false
+Caracal,false
+Caransebeș,false
+Carei,false
+Călan,false
+"Călărași Sud",false
+Călimănești,false
+Cărbunești,false
+Căzănești,false
+"Câmpia Turzii",false
+Câmpina,false
+Câmpulung,false
+"Câmpulung Moldovenesc",false
+"Cernavodă Pod",false
+"Chișineu Criș",false
+Chitila,false
+Ciulnița,false
+"Cluj Napoca",false
+Codlea,false
+Comarnic,false
+Comănești,false
+Constanța,false
+"Copșa Mica",false
+Corabia,false
+Costești,false
+"Costinești Tabără hc",false
+Craiova,false
+Cristur,false
+"Curtea de Argeș",false
+Curtici,false
+Deda,false
+"Dej Călători",false
+Deta,false
+Deva,false
+Dolhasca,false
+"Drăgănești Olt",false
+Drăgășani,false
+"Drobeta Turnu Severin",false
+Dumbrăveni,false
+"Eforie Nord",false
+"Eforie Sud Hm",false
+"Episcopia Bihor",false
+Făgăraș,false
+Făget,false
+Făurei,false
+Fetești,false
+Fierbinți,false
+Filiași,false
+"Florești Prahova",false
+Focșani,false
+Frasin,false
+Fundulea,false
+Gaești,false
+Galați,false
+"General Nicolae Dăscălescu",false
+"Geoagiu hc",false
+Gheorgheni,false
+Ghergani,false
+Gherla,false
+Ghimbav,false
+Ghimeș,false
+Giurgiu,false
+"Giurgiu Nord",false
+Golești,false
+"Gura Humorului Oraș",false
+Gurahonț,false
+Huedin,false
+Ianca,false
+Iași,false
+Iernut,false
+"Ilva Mică",false
+"Ion C. Brătianu",false
+"Iza Hm",false
+"Izvoru Mureșului",false
+"Izvoru Oltului",false
+Jibou,false
+Lehliu,false
+Liești,false
+Lotru,false
+Luduș,false
+Lugoj,false
+Mangalia,false
+Marghita,false
+"Măgura Șimleului hc",false
+Mărășești,false
+Medgidia,false
+Mediaș,false
+"Miercurea Ciuc",false
+"Miercurea Sibiu",false
+Milișăuți,false
+Mizil,false
+Năsăud,false
+"Neptun hc",false
+Nicolina,false
+Odorhei,false
+Onești,false
+Oradea,false
+Oraștie,false
+Oravița,false
+Orșova,false
+"Parcul Krețulescu",false
+Pașcani,false
+"Păușa h",false
+Pâncota,false
+Petroșani,false
+"Piatra Neamț",false
+"Piatra Olt",false
+Pitești,false
+"Ploiești Sud",false
+"Ploiești Vest",false
+"Podu Iloaiei",false
+"Podu Olt",false
+"Poiana Țapului hc",false
+Predeal,false
+Racoș,false
+Radna,false
+Rădăuți,false
+Războieni,false
+"Râmnicu Sărat",false
+"Râmnicu Vâlcea",false
+Râureni,false
+Recaș,false
+Reghin,false
+"Reșița Nord",false
+"Reșița Sud",false
+Roman,false
+"Roșiori Nord",false
+Rovinari,false
+Roznov,false
+"Saline hc",false
+Salonta,false
+Salva,false
+"Satu Mare",false
+"Săcuieni Bihor",false
+Săliște,false
+Sărățel,false
+Sântana,false
+"Sebeș Alba",false
+Sebiș,false
+"Segarcea Nord hc",false
+Seini,false
+"Sfântu Gheorghe",false
+Sibiu,false
+Siculeni,false
+"Sighetu Marmației",false
+Sighișoara,false
+Simeria,false
+Sinaia,false
+Slatina,false
+"Slobozia Veche",false
+"Soloneț hc",false
+"Stamora Moravița",false
+"Strehaia hc",false
+Subcetate,false
+Suceava,false
+Șuncuiuș,false
+Tălmaciu,false
+Tășnad,false
+Târgoviște,false
+"Târgu Frumos",false
+"Târgu Jiu",false
+"Târgu Mureș",false
+"Târgu Neamț",false
+Tecuci,false
+"Tecuci Nord hc",false
+Teiuș,false
+"Timișoara Nord",false
+Titu,false
+Toplița,false
+"Tulcea Oraș",false
+Turceni,false
+Țăndărei,false
+"Ulmeni Sălaj",false
+"Unirea hc",false
+Urziceni,false
+"Valea lui Mihai",false
+"Valea Sadului",false
+"Valea Uzului hc",false
+Vama,false
+Vaslui,false
+"Vatra Dornei Băi h",false
+Verești,false
+"Vicovu de Jos hc",false
+Videle,false
+"Vințu de Jos",false
+"Vișeu de Jos",false
+"Zalău Nord",false
+Abrami,false
+"Abrămuț hc",false
+Acâș,false
+"Aciliu hc",false
+Aciuța,false
+"Adămuș hc",false
+"Adânca Hm",false
+"Adjudu Vechi h",false
+Afumați,false
+"Agârbiciu hc",false
+"Aghireș hc",false
+"Agigea Ecluză",false
+"Agigea Nord",false
+"Albești Târnava",false
+"Aleșd hc",false
+"Alexandria Nord h",false
+Alexeni,false
+Almaș,false
+"Almăj h",false
+"Aluniș h",false
+"Aluniș Mureș",false
+"Aluniș Sălaj hc",false
+Amaradia,false
+"Ampoița hc",false
+Andrășești,false
+"Andreneasa hc",false
+"Andrieșeni hc",false
+"Anghelești hc",false
+"Angheluș h",false
+"Aninoasa Hm",false
+"Antestație Bărăbanț",false
+Apa,false
+"Apahida h",false
+Apața,false
+"Apoldu de Jos hc",false
+"Apoldu de Sus",false
+"Arad Vest",false
+"Aradu Nou",false
+"Aranca hc",false
+"Arcalia hc",false
+Arcești,false
+"Archita Hm",false
+"Arcuș h",false
+Argestru,false
+Armășești,false
+Armeniș,false
+Arpaș,false
+Asău,false
+Atârnați,false
+"Atelier Zona h",false
+Ațel,false
+Augustin,false
+"Aurel Vlaicu Hm",false
+"Axente Sever h",false
+"Azomureș hc",false
+"Baciu h",false
+"Baciu Triaj",false
+"Bacova hc",false
+"Bahnea Hm",false
+"Baia de Criș",false
+"Baia Dobrogea",false
+"Balda H",false
+Baldovinești,false
+"Balintești hc",false
+"Balinț Hm",false
+"Balomiru de Câmp h",false
+Balota,false
+"Balota h",false
+Balotești,false
+"Balta Sărată",false
+Banca,false
+"Banu Mărăcine",false
+"Barboși Triaj h",false
+Barcea,false
+Bartolomeu,false
+"Baru Mare",false
+"Baru Mare hc",false
+Bascov,false
+"Bata Hm",false
+"Batiz hc",false
+"Baza I.F.F. h",false
+Băbuțeni,false
+"Băcia hc",false
+"Băcia Hm",false
+"Bădeni hc",false
+"Bădila hc",false
+Băești,false
+Băiculești,false
+"Băile Calacea",false
+"Băile Miercurea hc",false
+"Băile Sărata Monteoru hc",false
+"Bălani H",false
+"Bălăbănești hc",false
+"Bălănoaia Hm",false
+"Bălăușeri Hm",false
+Băleni,false
+"Bălnaca hc",false
+Bălteni,false
+"Bălteni Olt Hm",false
+"Băneasa Giurgiu",false
+"Bănești Hm",false
+"Bănești Suceava hc",false
+"Bănila Câlnic hc",false
+Bănița,false
+Bărăbanț,false
+"Bărăbanț Nord h",false
+Bărăganu,false
+"Bărăteaz hc",false
+Bărbătești,false
+"Bărbulești hc",false
+Bătuța,false
+"Bâlc Hm",false
+"Bâlca Hm",false
+"Bâldana hc",false
+"Bâlteni h",false
+"Bârgău h",false
+"Bârla pe  Șieu hc",false
+Bârnova,false
+Bârzava,false
+"Bârzava Nouă",false
+"Bârzești hc",false
+"Beclean pe Olt h",false
+Beia,false
+Belcești,false
+Belinț,false
+"Bencei hc",false
+Benesat,false
+"Bentu hc",false
+Berca,false
+Berchisești,false
+Beregsău,false
+"Beresti Tunel",false
+Berești,false
+Berheci,false
+"Bernadea hc",false
+Berzovia,false
+"Betești Est h",false
+"Betești h",false
+"Bețel Hm",false
+Bibești,false
+Bichigiu,false
+"Bicsadu Oltului",false
+Biharia,false
+Biled,false
+"Birda Hcv",false
+"Birtin hc",false
+"Biserica Larga Jijia h",false
+"Bistrița Bârgăului h",false
+"Bistrița Bârgăului HCV",false
+"Bistrița Bârgăului Sat hc",false
+"Bistrița Fabrici h.",false
+"Bistrița h",false
+"Bita h",false
+"Bivolăria hc",false
+"Bizușa hc",false
+"Blandiana Hm",false
+Blejoi,false
+Boboc,false
+"Bobolia h",false
+"Bocicoel hc",false
+Bocicoi,false
+Bocsig,false
+"Bocșa Montană hc",false
+"Bocșa Română hc",false
+"Bocșa Sălaj hc",false
+Bod,false
+Bodoc,false
+"Bodrogu Nou hc",false
+"Bogata Mureș hc",false
+"Bogdana h",false
+"Boiu Bihor hc",false
+Boju,false
+"Bolcaș Hm",false
+"Boldești hc",false
+"Boldur H",false
+"Bologa hc",false
+"Bolovăniș hc",false
+"Bonțești hc",false
+Bonțida,false
+"Bordei hc",false
+"Borla Hm",false
+"Borlești Argeș hc",false
+"Boroșneu Mare H",false
+"Borzești Bacău",false
+"Borzești Bacău h",false
+Borzia,false
+"Bota Sat h",false
+"Boteni hc",false
+"Botiz Hm",false
+"Boureni hcv",false
+"Bradu de Sus",false
+"Braniștea hc",false
+Bratca,false
+"Brateș H",false
+Brazi,false
+"Brădești hc",false
+"Brădet Hm",false
+"Brădișoru de Jos hc",false
+"Brăhășoaia hc",false
+Brăișoru,false
+Brănești,false
+"Brănești Sat hc",false
+"Brăneț hc",false
+"Brănișca PO",false
+"Brătășanca hc",false
+"Brătei h",false
+"Brăteni h",false
+"Brâncovenești hc",false
+"Breaza Nord",false
+Brebu,false
+"Bretea Mureșană h",false
+"Bretea Streiului",false
+Brețcu,false
+Broșteni,false
+"Brusturoasa hc",false
+"Bucești hc",false
+"Bucșani hc",false
+"Bucșani Vâlcea h",false
+"Bucșenești hc",false
+"București Basarab",false
+"București Basarab h",false
+"București Băneasa",false
+"București Progresu",false
+"București Sud Gr.C",false
+"București Triaj hc",false
+"București Vest",false
+"Bucureștii Noi",false
+Buda,false
+"Budăi hc",false
+Budești,false
+"Budești Cluj H",false
+"Budieni hc",false
+"Budila H",false
+"Buhăceni hc",false
+"Bujoreni Vâlcea",false
+"Bulboaca hc",false
+Bulz,false
+Bumbești,false
+"Bunești h",false
+"Bungețel h",false
+"Burjuc h",false
+"Bursuceni hc",false
+Bușag,false
+"Butan Hm",false
+Butoiești,false
+"Buzău Nord",false
+"Buzău Sud",false
+"Buzescu Hm",false
+"C.A.Rosetti Hm",false
+"C.C.H Dej h.",false
+"C.I.L. hc",false
+Cacica,false
+"Cadia hc",false
+"Caila hc",false
+"Canton 217 h",false
+"Canton 282 h",false
+"Canton nr 9 h",false
+"Caracău h",false
+"Caralița hc",false
+"Caransebeș hc",false
+"Carasa hc",false
+"Cariera Leasa hc",false
+"Carpați h",false
+"Castelu hc",false
+Cataloi,false
+"Cața Hm",false
+"Cazaci hc",false
+Căciulați,false
+Căiuți,false
+"Călan Băi",false
+"Călărași Nord",false
+"Călărași Turda Hm",false
+"Căldăraru h",false
+"Călimănești Vrancea h",false
+Călina,false
+Călinești,false
+"Cămara Sighet",false
+"Căpăt H",false
+"Căpâlna pe Someș hc",false
+"Căpruța hc",false
+Cărpiniș,false
+"Cășeiu Hm",false
+"Cătălina h",false
+Căvăran,false
+Câineni,false
+"Câlnic hc",false
+"Câmpia Sălaj hc",false
+"Câmpu Libertății",false
+"Câmpulung Est",false
+"Câmpuri Surduc Hm",false
+"Cândești hc",false
+"Cânepiști Hm",false
+Cârbești,false
+"Cârcea Hm",false
+"Cârța hc",false
+"Cârțani hc",false
+Câțcău,false
+"Ceamurlia de Jos Hm",false
+"Cebza hc",false
+Cefa,false
+Cenad,false
+"Ceplenița hc",false
+"Cerăt h.",false
+Cernele,false
+"Cerneteaz hc",false
+"Cernica hc",false
+"Cetatea de Baltă Hm",false
+"Cetatea hc",false
+"Cezieni hc",false
+"Checea Sat",false
+"Chețani hc",false
+"Chevereș hc",false
+Chiajna,false
+"Chichiș hc",false
+"Chinezu h",false
+"Chintelnic h.",false
+"Chiraftei hc",false
+"Chiraleș hc",false
+Chiriacu,false
+"Chiribiș hc",false
+"Chirileu hc",false
+Chizătău,false
+Cicârlău,false
+"Ciceu Cristur hc",false
+"Ciceu Mihaești hc",false
+Cilibia,false
+"Ciobotani h",false
+Ciocanești,false
+"Ciochina hc",false
+"Ciochiuța Hm",false
+"Ciocmani hc",false
+Ciolpani,false
+"Ciopea h",false
+Ciorani,false
+"Cipău Hm",false
+"Ciprian Porumbescu",false
+"Cireșoaia Hm",false
+Cireșu,false
+Cislău,false
+"Cistei hc",false
+Ciucea,false
+"Ciudanovița hc",false
+Ciumeghiu,false
+Ciumești,false
+Ciurea,false
+"Clarii Vii hc",false
+Cliciova,false
+Clondiru,false
+Clucereasa,false
+"Cluj Napoca Est",false
+"Clujana h",false
+"Cociu hc",false
+Cogealac,false
+"Cojocaru hc",false
+Cojocna,false
+Coldău,false
+"Colibași Hm",false
+"Colțan Hm",false
+Comana,false
+"Comlaus hc",false
+"Conop PO",false
+"Conțești hc",false
+Copăcioasa,false
+"Coplean hc",false
+Corbu,false
+"Corlăteni hc",false
+Corlățești,false
+"Cornățel Moldova hc",false
+"Cornea hc",false
+"Cornești Târnava hc",false
+Cornet,false
+"Corni hc",false
+"Cornurile hc",false
+"Cornuțel Banat",false
+"Coroiu hcv",false
+Cosmești,false
+"Costești Iași hc",false
+Costinești,false
+"Costișa Hm",false
+Coșbuc,false
+Coșlariu,false
+"Coșna Hm",false
+"Coșteiu hc",false
+"Coșteiu Mare",false
+Cotești,false
+Cotnari,false
+"Coțofenești hc",false
+Coțofeni,false
+Covasna,false
+"Covragiu h",false
+"Cozia Hm",false
+"Craiova Triaj hc",false
+Crasna,false
+Crăciunel,false
+"Crăciunești hc",false
+"Crăiești h",false
+"Crângu lui Bot",false
+"Crângul lui Tei hc",false
+Cricov,false
+"Cristești Jijia Fr",false
+"Cristești Pașcani hc",false
+Cristian,false
+"Cristian Sibiu",false
+"Criva h",false
+Crivadia,false
+Crivina,false
+Cruceni,false
+Crușovăț,false
+"Cuceu Salaj hc",false
+"Cuci Hm",false
+Cuciulat,false
+"Cucuieți Sudiți hc",false
+Cunta,false
+Curcani,false
+"Curtuișeni Hm",false
+"Cut hc",false
+"Daești Hm",false
+Dagâța,false
+"Daia PO",false
+Daneș,false
+"Dăneasa hc",false
+"Dănești hc",false
+Dărmănești,false
+"Dâlga Hm",false
+"Dâmbovicioara h",false
+Dâmbu,false
+Dângeni,false
+"Dângeni Nord hc",false
+Dârste,false
+"Dârza hc",false
+"Deaj hc",false
+"Dealu Robului h",false
+"Dealu Ștefăniței",false
+"Decea hc",false
+"Deda Bistra",false
+Dedulești,false
+Dej,false
+"Denta hc",false
+"Depoul Buc. Triaj h",false
+"Derșida hc",false
+Deveselu,false
+"Dezmir hc",false
+"Dinamica h",false
+Diosig,false
+Ditrău,false
+"Dobeni H",false
+Dobra,false
+"Dobrei P. aj. M",false
+"Docăneasa Hm",false
+"Dodești hc",false
+"Dofteana Bacău",false
+Doicești,false
+"Doicești hc",false
+"Domașnea Cornea Hm",false
+"Domănești Hm",false
+"Domnești pe Șieu hc",false
+"Domnești Târg hc",false
+"Domneștii de Sus hc",false
+"Dor Mărunt",false
+"Dor Mărunt Sat h",false
+"Dorna Candrenilor hc",false
+Dornești,false
+Dorobanțu,false
+Dorohoi,false
+"Dorolțu hc",false
+"Dragalina Hm",false
+"Dragoș Vodă",false
+"Drăgănești Prahova",false
+Drăghici,false
+"Drăguțești h",false
+"Dridif hc",false
+Dridu,false
+"Drobeta T.Severin Est Hm",false
+"Drobeta T.Severin Mf.",false
+Dudești,false
+"Dudeștii Noi Hm",false
+"Dudeștii Vechi",false
+"Dumbrava Hm",false
+Dumbrăvioara,false
+"Dumbrăvița Bârsei Hm",false
+"Dumești hc",false
+"Dunărea Hm",false
+"Ecaterina Teodoroiu",false
+"Erbiceni hc",false
+"Erghevita hc",false
+"Ezeris Hc",false
+"Ezureni h",false
+Faraoani,false
+"Făget Teleajen",false
+"Fălcoiu hc",false
+"Făncica h.",false
+Fărcașele,false
+"Fâlfani Hm",false
+"Fârțănești hc",false
+"Feisa hc",false
+Feldioara,false
+"Feldru Hm",false
+"Feliceni hc",false
+"Felnac Hm",false
+"Feneș hc",false
+"Ferma Ciala H",false
+"Fersig hc",false
+"Fiad Hm",false
+"Fibiș hc",false
+Fieni,false
+Fiezel,false
+Filești,false
+Fișcălia,false
+Floreni,false
+"Florești hc",false
+Foltești,false
+Frăsinet,false
+Frățești,false
+Frumușița,false
+Frunzănești,false
+Frunzeasca,false
+"Fulga hc",false
+"Fundata hc",false
+"Fundătura hc",false
+Fusea,false
+"Gaești Sud hc",false
+Galbeni,false
+"Găgeni hcv",false
+"Găiseanca hc",false
+Gălănești,false
+"Gălășeni hc",false
+Gălăteni,false
+Gălăuțaș,false
+"Gălbinași Hm",false
+"Găneasa hc",false
+"Găneasa Olt h",false
+"Gănești hcv",false
+Gărleni,false
+Gătaia,false
+"Găvănel hcv",false
+Găvojdia,false
+Gâlgău,false
+"Gâlgău h",false
+Gârbău,false
+"Gârbovu H",false
+"Gârliște Hm",false
+"Gârnița Hm",false
+"Gelu H",false
+"General Eremia Grigorescu",false
+"General Gh. Avramescu",false
+"General Traian Moșoiu",false
+"Gheaba 2",false
+"Gherteniș hc",false
+"Ghidigeni Hm",false
+Ghioroc,false
+Ghiroda,false
+Giarmata,false
+Gilort,false
+"Giorocuța h",false
+"Giroc hc",false
+"Giulvăz H",false
+"Giurtelec hc",false
+Gligorești,false
+"Glodu Someșului",false
+Glogovăț,false
+"Glogoveț h.",false
+"Goioasa Hm",false
+Golenți,false
+"Gornești Mureș H",false
+Govora,false
+Grajduri,false
+Grădinari,false
+Grădinița,false
+Grădiștea,false
+"Greci Hm",false
+Grindeni,false
+"Grivița hc",false
+"Gropeni hc",false
+"Grozăvești Hm",false
+"Grupa Tehnică Caracal",false
+Gugești,false
+"Gura Arieșului hc",false
+"Gura Bâscii",false
+"Gura Humorului",false
+"Gura Motrului",false
+"Gura Putnei",false
+"Gura Văii",false
+"Gura Vitioarei PO",false
+"Gurasada PO",false
+"Guruslău hc",false
+Halmeu,false
+"Hanu Conachi",false
+Hălăucești,false
+Hălmagiu,false
+"Hămeiuș h",false
+Hărman,false
+"Hășag hc",false
+"Hătcărău hc",false
+Hârlău,false
+"Hârșești Hm",false
+"Hodoni H",false
+"Hodora hc",false
+Holboca,false
+"Holdea Hm",false
+"Homorâciu Hm",false
+"Horodnic hc",false
+"Horticola h",false
+"Hotoan hc",false
+Iablanița,false
+Iacobeni,false
+"Iacobenii Vechi hc",false
+Ialomița,false
+Iclod,false
+"Ideciu de Jos hc",false
+"Igiroasa Hm",false
+Ilba,false
+Ileanda,false
+Ilia,false
+"Ilieni hc",false
+"Ilovița h",false
+Ilteu,false
+"Ilva Mare",false
+"Imeci Hm",false
+"Inău hc",false
+Independența,false
+Ineu,false
+Inotești,false
+"Ion Luca Caragiale",false
+"Ion Luca Caragiale Vest",false
+Ionești,false
+"Ionești Gorj hc",false
+Ipu,false
+Islaz,false
+Ișalnița,false
+"Ișalnița hc",false
+Itești,false
+"Ivănești hc",false
+Ivești,false
+"Izvin hc",false
+"Izvoarele hc",false
+"Întorsura Buzăului",false
+"Jabăr Hm",false
+Jebel,false
+"Jebuc hc",false
+Jegălia,false
+"Jena Hm",false
+Jianca,false
+"Jidoștița h",false
+Jidvei,false
+"Jijia hc",false
+Jilava,false
+Jimbolia,false
+"Jiu Hm",false
+"Joia Mare hc",false
+"Josenii Bârgăului hc",false
+Jucu,false
+"Jucu de Jos hc",false
+"Jupânești Hm",false
+"KM 105 600 h",false
+"KM 107 000 h",false
+"KM 109 000 h",false
+"KM 25 700 h",false
+"KM 49 800 h",false
+"KM 74 600 hc",false
+"Lacu Crișului h",false
+"Lacu Sărat",false
+Lainici,false
+"Lalașinț PO",false
+"Larga Jijia",false
+"Larion Hm",false
+"Laslău hc",false
+"Lazărea hc",false
+Lăpugiu,false
+Lăzărești,false
+Lechința,false
+"Lemnia hc",false
+Leorda,false
+"Leordeni Argeș",false
+Leordina,false
+"Leordina hc",false
+Lespezi,false
+"Lespezi Bacău hc",false
+"Leș Bihor Hm",false
+"Leșu Ilvei Hm",false
+Letca,false
+"Letea h",false
+Lețcani,false
+Leu,false
+"Lipănești hc",false
+Lișava,false
+Liteni,false
+"Livada Someș hc",false
+"Livadia hc",false
+Livezeni,false
+"Livezi Ciuc",false
+"Livezile Bârgăului hc",false
+"Loamneș Hm",false
+Lovrin,false
+Lucăcești,false
+"Luduș Sat hc",false
+"Lugoj Nord h",false
+"Luica hc",false
+"Luna h",false
+"Lunca Banului hc",false
+"Lunca Bradului",false
+"Lunca Budieni Hm",false
+"Lunca de Mijloc",false
+"Lunca de Sus",false
+"Lunca hc",false
+"Lunca Ilvei",false
+"Lunca Jiului hc",false
+"Lunca la Tisa hc",false
+"Lunca Moților hc",false
+"Lunca Mureș hc",false
+"Lunca Siretului hc",false
+"Luncavița h",false
+"Lungești h",false
+"Lutița h",false
+"Macău hc",false
+"Maglavit hcv",false
+"Malnaș Băi",false
+"Malnaș hc",false
+"Malu Alb hc",false
+"Malu hc",false
+"Malu Mare Hm",false
+"Mareșal Constantin Prezan",false
+Margina,false
+"Marginea Bihor hc",false
+"Marna hc",false
+"Mateiaș hc",false
+"Mateieni hc",false
+"Măceu hc",false
+"Mădăraș Bihor hc",false
+"Mădăraș Ciuc Hm",false
+"Măgheruș Șieu",false
+"Măgura Hm",false
+"Măgura Ilvei",false
+"Măgurele Prahova",false
+"Măgurele Prahova N. hc",false
+"Măgurele Sud hc",false
+"Măierus hc",false
+"Mălăești hc",false
+"Măldăeni Hm",false
+"Mănărade hc",false
+Mănăștur,false
+Măneciu,false
+"Măneciu Pământeni hc",false
+Mărișelu,false
+"Mărunțișu hc",false
+"Mătăsaru Hm",false
+"Măureni Hm",false
+"Mânăstirea Turnu h",false
+"Mândra h",false
+"Mândra Oltului Hm",false
+"Mândrești hc",false
+"Mârșa hc",false
+"Mâsca Măderat hc",false
+"Medieșu Aurit",false
+Mehadia,false
+"Mehadia Nouă Hm",false
+"Melini Valea Largă h",false
+Mera,false
+"Mereni Lutoasa hc",false
+Meri,false
+"Merișani Hm",false
+Merișor,false
+Mestecăniș,false
+"Mica hc",false
+"Micăsasa h",false
+"Miceștii de Câmpie hc",false
+Micula,false
+"Mihai Bravu",false
+"Mihai Viteazu",false
+"Mihail Kogălniceanu",false
+Mihăești,false
+"Mihăileni Hm",false
+"Miheșu de Câmpie",false
+"Miheșu de Câmpie Sat hc",false
+Mija,false
+"Mijlocenii Bârgăului h",false
+"Milcov Hm",false
+Milova,false
+Mintia,false
+"Mintia h",false
+"Mioveni hc",false
+"Mirăslău hc",false
+"Mircea Vodă",false
+Mircești,false
+"Mireșu Mare hm",false
+Mirșid,false
+"Mititei hc",false
+"Moacșa H",false
+"Moara Vlăsiei",false
+"Mocrea hc",false
+"Moftin hcv",false
+"Mogoșeni Hm",false
+"Mogoșești hc",false
+Mogoșoaia,false
+"Mohu Hm",false
+Moldoveni,false
+Molid,false
+"Moniom H",false
+"Monor Gledin",false
+"Morăreni hc",false
+"Moscu hc",false
+"Mostiștea hc",false
+"Moțăieni hc",false
+Moțăței,false
+Movila,false
+"Movila Dâmbovița hc",false
+"Movila Oii hc",false
+"Movileni hc",false
+Muncel,false
+"Munor hc",false
+Munteni,false
+"Munteni Buzău hc",false
+Mureni,false
+"Murfatlar hc",false
+Murgeanca,false
+"Muru hc",false
+Musculești,false
+Nădab,false
+"Nădășel hc",false
+"Nădejdea Hm",false
+"Nădejdea Sat h",false
+Nădlac,false
+"Năsăud H",false
+"Negoiești h",false
+"Negreni h",false
+"Negrești Vaslui",false
+Nehoiașu,false
+Nehoiu,false
+"Nemeșești Hm",false
+"Nepos hc",false
+Neptun,false
+"Nevrincea hc",false
+Nichișeni,false
+"Nicolae Bălcescu",false
+"Nima hc",false
+Nimigea,false
+"Nimigea hc",false
+"Nistorești hc",false
+Nucet,false
+Nușfalău,false
+"Ocisor hc",false
+"Ociu hc",false
+"Ocna Sibiului",false
+Odoreu,false
+"Odorhei Sud h",false
+"Ogoarele hc",false
+Ogra,false
+"Ohaba de Sub Piatră hc",false
+"Ohaba hc",false
+"Ojasca hc",false
+Olteni,false
+Oltenița,false
+"Olteț hc",false
+"Oncești hc",false
+"Oradea Est",false
+"Oradea Est Triaj h",false
+"Oradea Vest",false
+Orbeni,false
+Orlat,false
+"Orlești hc",false
+"Ormeniș hc",false
+Orțișoara,false
+"Ostroveni h",false
+Oșorhei,false
+"Otopeni Nord PO",false
+Ovidiu,false
+Ozun,false
+"Pajura Hm",false
+Palanca,false
+Palas,false
+"Paloș Ardeal hc",false
+Pantelimon,false
+"Pantelimon Sud",false
+"Pantelimon Vest PO",false
+"Parângu Hm",false
+"Parc Divertisment Chiajna",false
+"Parc Mogoșoaia",false
+"Parța H",false
+"Pasajul Coșoveni hc",false
+Pasărea,false
+"Pașcani Triaj h",false
+"Patinoar PO",false
+"Pavilion CFR Brașov Triaj",false
+"Pădureni Putna",false
+"Pădureni Timiș Hm",false
+"Păltineni hc",false
+"Pănade hc",false
+"Părhăuți hc",false
+"Păru hc",false
+Pătârlagele,false
+Pătroaia,false
+Păulian,false
+Păuliș,false
+"Păuliș hc",false
+Pângărați,false
+Pârscov,false
+"Pârțești hc",false
+"Pârvu hc",false
+"Pârvu Hm",false
+Pecica,false
+"Peciu Nou",false
+"Peret hc",false
+Periam,false
+"Perieți Hm",false
+Periș,false
+"Periș Mureș hc",false
+Perișoru,false
+Perșani,false
+"Pesac hc",false
+"Pescărețu Mic H",false
+"Pescăruș h",false
+"Peșteana Jiu hc",false
+"Peștera Bolii h.",false
+"Peștera hc",false
+"Petelea hc",false
+"Petreu hc",false
+"Petriș pe Mureș hc",false
+"Petroșani Triaj h",false
+"Petroșnița hc",false
+"Petrova Hm",false
+"Piatra Craiului",false
+"Picioru Lupului Hm",false
+Pielești,false
+"Pietrele Albe",false
+"Pietrișu hc",false
+Pietroșița,false
+"Piscu hc",false
+"Piscu Rusului hc",false
+Pișchia,false
+"Pitești Nord",false
+"Plaiu Vulcănești",false
+"Platonești hc",false
+"Plăieșu hc",false
+"Plătărești hc",false
+"Ploiești Est",false
+"Ploiești Est Post 1",false
+"Ploiești Nord",false
+Plopeni,false
+"Plopeni Sat Hm",false
+"Plopi h",false
+Plopșoru,false
+Plopu,false
+Plosca,false
+Ploscoș,false
+"PM Ram. Ploiești Triaj",false
+Poarta,false
+"Poarta Albă hc",false
+Podari,false
+"Podereia Feldrului h.",false
+Podoleni,false
+"Podu Mureș Hm",false
+"Podu Rizii hc",false
+"Podu Ulmi h",false
+"Podul Pitarului PO",false
+"Poiana Ampoiului hc",false
+"Poiana Florilor h",false
+"Poiana Ilvei",false
+"Poiana Slănic",false
+Poieni,false
+"Poienița hc",false
+"Pojogeni Hm",false
+Pojorâta,false
+"Ponor hc",false
+"Poptelec hc",false
+Portărești,false
+"Porți hc",false
+Porumbacu,false
+"Porumbenii Mari hc",false
+"Porumbenii Mici hc",false
+"Porumbești hc",false
+"Posada hc",false
+"Potângeni hc",false
+Potcoava,false
+Prahova,false
+"Prăjani hc",false
+"Preasna Hm",false
+Prejmer,false
+"Pricaz h",false
+"Prisaca Dornei",false
+"Prisaca hc",false
+"Probota hc",false
+"Prundu Bârgăului hc",false
+Prunișor,false
+Pucioasa,false
+Pufești,false
+Pui,false
+Putna,false
+"Putna Centru h",false
+"Putna Seacă",false
+"Putna Troiță h",false
+"Racova Hm",false
+Racovița,false
+"Racu hc",false
+Radomirești,false
+"Radomiru hc",false
+"Rafaila Hm",false
+"Ram. M.K.P. Aj. M.",false
+"Ram. Podu Mureș",false
+"Ramificația Borcea",false
+"Ramificația CAM h",false
+"Ramura Botiz h",false
+"Ramura Golești",false
+"Rateș Munteni hc",false
+"Rateșu Cuzei hc",false
+Răcari,false
+Răcăciuni,false
+"Răchita Hm",false
+"Rădaia h",false
+"Rădăuți Gara Mică h",false
+"Rădești hc",false
+"Rădoiești Hm",false
+"Rădulești Hm",false
+"Răhău hc",false
+"Răpsig Hm",false
+"Răscruci hc",false
+Răstoaca,false
+Răstoci,false
+Răstolița,false
+"Răsuceni h",false
+"Răuseni hc",false
+Răzvad,false
+"Râfov hc",false
+"Râmnicu Vâlcea Nord h",false
+"Râpa de Jos Hm",false
+Râșnov,false
+"Râșnov hc",false
+"Râu Vadului",false
+"Râureni hc",false
+"Rebricea Hm",false
+Rebrișoara,false
+"Recea Hm",false
+"Recolta hc",false
+Rediu,false
+"Remetea Mare",false
+"Remetea Mică",false
+"Remiza T. Socola h",false
+"Resighea h",false
+Reteag,false
+"Reteag hc",false
+"Ribița hc",false
+"Robănești Hm",false
+"Robești Hm",false
+Rogojelu,false
+"Romanița hc",false
+"Romlux hc",false
+Romula,false
+"Romuli Hm",false
+"Ronaț Triaj Cabina 1",false
+"Ronaț Triaj Gr. D",false
+"Ronaț Triaj h",false
+"Roșcani hc",false
+"Roșia Jiu h",false
+Roșiești,false
+"Roșiori Bihor Hm",false
+"Roșiori Est",false
+"Roșu Hm",false
+"Rotbav hc",false
+"Rovinari Sud h",false
+"Rudna H",false
+Ruginoasa,false
+"Rus hc",false
+"Rusu Bârgăului hc",false
+"Rușavățu hc",false
+"Ruși hc",false
+"Rușii Munți hc",false
+"Rușor hc",false
+"Sacoșu Mic",false
+"Sacu hc",false
+Sadova,false
+Sagna,false
+Saligny,false
+Sanislău,false
+"Santău Hm",false
+"Saravale H",false
+"Saschiz h",false
+Sascut,false
+"Satu Mare Sud",false
+"Satu Nou Nord",false
+"Satulung pe Someș",false
+Săbăoani,false
+Săbăreni,false
+"Săbișa hc",false
+"Săbolciu hc",false
+"Săcădat Hm",false
+Săcălaz,false
+"Săcășeni hc",false
+Săcel,false
+"Săcelu Sibiului hc",false
+"Săcuieni hc",false
+"Săcuieni Roman",false
+"Săcuienii Noi h",false
+Săhăteni,false
+"Sălcuța Hm",false
+"Săldăbagiu hc",false
+"Sărata Colun hc",false
+"Sărata hc",false
+"Sărățeni Ialomița h",false
+Sărățuica,false
+"Sărdănești h",false
+"Sărmaș H",false
+"Sărmaș Runc hc",false
+"Sărmășel Gaz Metan hc",false
+"Sărmășel H",false
+Sărulești,false
+"Sătmarel Hm",false
+"Săulești h",false
+Săvârșin,false
+"Săvinești hc",false
+Sânandrei,false
+"Sâncel hc",false
+Sâncrăieni,false
+Sândominic,false
+"Sângeorgiu Nou H",false
+"Sânger Tăureni H",false
+"Sânmihai hc",false
+"Sânmihaiu de Câmpie H",false
+"Sânnicolau Mare",false
+"Sânnicolau Nord",false
+"Sânpaul hc",false
+"Sânpetru German H",false
+"Sânpetru H",false
+Sânsimion,false
+"Sântamaria hc",false
+Sântimbru,false
+"Sântimbru Ciuc hc",false
+"Sântimbru hc",false
+"Sântoma h",false
+"Sânzieni H",false
+Sârca,false
+Scăieni,false
+"Scărlătești hc",false
+Scânteia,false
+"Scârlența hc",false
+"Schitu Golești",false
+"Scoarța h",false
+"Scoreiu hc",false
+"Scroviștea hc",false
+"Sebeș Glod hc",false
+"Sebeș Olt hc",false
+Secusigiu,false
+Segarcea,false
+"Seleuș hc",false
+"Semenic Hm",false
+"Seuca h",false
+"Sfântu hc",false
+"Sfântu Mina",false
+"Sfântu Nicolae hc",false
+"Sibiel hc",false
+"Sibiu Gr. Șelimbăr Hm",false
+"Sibiu hc",false
+"Sibiu Triaj h",false
+Sihlea,false
+"Silhoasa Hm",false
+"Siliștea Crucii hc",false
+Simbrea,false
+"Simeria Triaj",false
+"Simeria Veche hc",false
+"Simion hc",false
+"Sinaia Sud hc",false
+"Sinești Hm",false
+Sinia,false
+"Sintești hc",false
+"Siretu Bacău hc",false
+"Slatina Timiș",false
+Slănic,false
+Slătioara,false
+"Slăvitești hc",false
+"Slobozia Sud",false
+Socola,false
+"Someș Odorhei",false
+Spicu,false
+"Spineni Hm",false
+"Spinoasa Hm",false
+"Stamora Germană",false
+"Stana Hm",false
+Stănești,false
+"Stănița hc",false
+Stâlpeni,false
+"Stâna de Vale hc",false
+Stânceni,false
+"Stânceni hc",false
+"Stânceni Neagra hc",false
+"Stejaru hc",false
+Stoeneasa,false
+Stoenești,false
+"Stoicani hc",false
+"Stolniceni hc",false
+Stolnici,false
+"Strâmba h",false
+"Strâmbuța Hm",false
+Strehaia,false
+Strejești,false
+Stroiești,false
+"Studina hc",false
+"Studinița h",false
+"Stupini Hm",false
+"Subcetate Mureș",false
+"Suceag hc",false
+"Suceava Nord",false
+"Suceava Vest",false
+"Suhuleț hc",false
+"Suplacu de Barcău",false
+Supur,false
+"Supur hc",false
+"Surduc Sălaj",false
+"Susani Bega hc",false
+"Suseni Hm",false
+"Susenii Bârgăului Hm",false
+"Șag Hm",false
+"Șandra Hm",false
+"Șantier Naval h",false
+"Șard Ighiu Hm",false
+Șărmășag,false
+"Șărmășag hc",false
+"Șeica Mare",false
+"Șeica Mare hc",false
+"Șeica Mică",false
+"Șeitin H",false
+Șemlac,false
+Șendreni,false
+"Șerbănești hc",false
+"Șerbești Bacău hc",false
+"Șerbeștii Vechi hc",false
+Șercaia,false
+"Șercaia hc",false
+"Șețu hc",false
+Șibot,false
+Șieu,false
+"Șieut hc",false
+Șilindru,false
+Șimand,false
+"Șimleu Silvaniei",false
+Șintereag,false
+Șiria,false
+"Șișcani h",false
+"Șivița hc",false
+Șofronea,false
+"Șoimuș hc",false
+Șoldana,false
+"Șoldanu h",false
+"Șona Hm",false
+"Șopârlița hc",false
+"Ștefan cel Mare hc",false
+"Ștefan Vodă",false
+"Șugău h",false
+"Șuștra hc",false
+"Tabanu hc",false
+"Tapia Hm",false
+Tarcău,false
+"Tarcău Neamț Hm",false
+"Tăbărăști hc",false
+"Tăbărăști Sud hc",false
+"Tălăgiu H",false
+"Tălășmani hc",false
+"Tămand h",false
+Tămașda,false
+"Tămăseu h",false
+"Tărtăria hc",false
+"Tătărani h",false
+"Tăureni hc",false
+"Tăutu Ampoiului hc",false
+"Tâgșor h",false
+Tâmna,false
+"Tânganu hc",false
+"Târgoviște Nord",false
+"Târgșoru Nou",false
+"Târgu Bujor",false
+"Târgu Mureș Nord",false
+"Târgu Mureș Sud",false
+"Târgu Ocna",false
+"Târgu Secuiesc",false
+"Târgușor Bihor Hm",false
+"Târgușor Dobrogea",false
+"Târnava h",false
+Târnavele,false
+Târnăveni,false
+"Târnăveni Vest",false
+"Târnova Zarand",false
+"Teiș Hm",false
+Teișani,false
+"Telciu Hm",false
+"Telechiu Hm",false
+"Teliu hc",false
+Teregova,false
+"Termo Turceni h",false
+"Tibiscu h",false
+Tileagd,false
+"Tilișca Hm",false
+Timișeni,false
+Timișești,false
+"Timișoara C.E.T.",false
+"Timișoara Est",false
+"Timișoara Sud",false
+"Timișoara Vest",false
+"Timișu de Jos hc",false
+"Timișu de Sus Hm",false
+Tiream,false
+"Tisa h",false
+"Titan Sud",false
+Todireni,false
+"Todirești Hm",false
+"Tohanu Vechi Hm",false
+Tomești,false
+"Tomnaticu Hcv",false
+"Tomșani hc",false
+"Topile hc",false
+Topleț,false
+Topolovăț,false
+"Toporaș hc",false
+Toporu,false
+"Traian Sat",false
+"Traian Vuia Hm",false
+"Trainica hc",false
+"Trestieni hc",false
+"Trifești hc",false
+"Trotuș Hm",false
+Trușești,false
+"Tudor Vladimirescu hc",false
+"Tulcea Mărfuri",false
+Tulucești,false
+"Tunel Hm",false
+"Turburea Hm",false
+Turdaș,false
+Turnișor,false
+"Turnu Roșu",false
+"Tușnad Sat",false
+Tutova,false
+"Tuzla hc",false
+"Țagu H",false
+"Țagu Sat hc",false
+"Țărțăl hc",false
+Țânțăreni,false
+"Țebea hc",false
+"Țepeș Vodă Hm",false
+"Țețchea hc",false
+"Țibeni hc",false
+"Țicău hc",false
+"Țigău h",false
+Țufalău,false
+Ucea,false
+"Uilacu Șimleului hc",false
+"Uliuc hc",false
+Ulmeni,false
+"Umbrărești Hm",false
+"Umbrărești Sat",false
+"Ungheni Prut Hm",false
+Ungureni,false
+"Unguriu hc",false
+Unirea,false
+Urechești,false
+Urleasca,false
+"Urseni hc",false
+"Urzica Mare h",false
+"Utușoiu h",false
+"Utvin hc",false
+"Utviniș hc",false
+"Utvinișu Nou Hm",false
+"Vadu Crișului",false
+"Vadu Crișului hc",false
+"Vadu Lat",false
+"Vadu Roșu h",false
+"Vaduri h",false
+"Valea Albă Hm",false
+"Valea Călugărească",false
+"Valea Cernei",false
+"Valea Drăganului hc",false
+"Valea Florilor",false
+"Valea Fratelui h",false
+"Valea Homorod h",false
+"Valea Largă Hm",false
+"Valea Lungă",false
+"Valea Mărului Hm",false
+"Valea Mureșului hc",false
+"Valea Păltinișului hc",false
+"Valea Putnei",false
+"Valea Roșie Hm",false
+"Valea Seaca h",false
+"Valea Seacă",false
+"Valea Sibiciului h",false
+"Valea Strâmbă hc",false
+"Valea Teliu h",false
+"Valea Timișului",false
+"Valea Uzului",false
+"Valea Viilor Hm",false
+"Valea Vișeului",false
+"Valea Voievozilor hc",false
+"Valeadeni hc",false
+"Valu lui Traian",false
+Vameș,false
+"Var hc",false
+"Variaș h",false
+"Vasilați hc",false
+"Vasile Alecsandri hc",false
+Vasiova,false
+"Vatra Dornei",false
+Vața,false
+Văcărești,false
+Vădeni,false
+Vălcani,false
+"Văleni Meteș hc",false
+"Văleni Nord",false
+"Vălenii de Munte",false
+"Vălișoara Hm",false
+Văratec,false
+Vărădia,false
+"Vărădia PO",false
+"Vărbilău hc",false
+Vânători,false
+"Vârciorova Hm",false
+Vârfurile,false
+Vârteju,false
+"Vârtoapele hc",false
+"Vârț h",false
+"Vermeș hc",false
+Vernești,false
+"Veșeud h",false
+"Veștem hc",false
+"Vețel PO",false
+"Viaductu Cârcea hc",false
+"Vicov Motel",false
+"Vicovu de Sus hc",false
+Vidra,false
+"Vidrasău hc",false
+"Viile Giarmata hc",false
+"Viișoara h",false
+"Viișoara hc",false
+Vinga,false
+Viperești,false
+"Vișeu Bistra hc",false
+Vișina,false
+"Vișina Veche hc",false
+"Viștea hc",false
+"Vizireni hc",false
+"Vlad Țepeș hc",false
+Vlașca,false
+Vlădeni,false
+"Vlădeni Ardeal",false
+"Vlădești hc",false
+Vlăduleni,false
+"Vlăduleni Gorj Hm",false
+Voetin,false
+Voila,false
+Voiteni,false
+Vorniceni,false
+Voșlăbeni,false
+"Vrabia hc",false
+"Vulcana Pandele",false
+Vulpășești,false
+"Zagna Vădeni hc",false
+Zalhanaua,false
+Zam,false
+"Zau de Câmpie H",false
+"Zăbala h",false
+"Zădăreni H",false
+Zăgujeni,false
+"Zănești Neamț hc",false
+Zănoaga,false
+Zărnești,false
+"Zăvestreni Hm",false
+Zăvideni,false
+Zebil,false
+Zerind,false
+"Zigoneni h",false
+"Zimandu Nou hc",false
+"Zlatna h",false
+"Zlatna H.",false
+"Zlatna Tehnică",false
+Zlătărei,false
+Zlătunoaia,false
+"Zoița Hm",false
+"Zorile h",false
+Zorleni,false
