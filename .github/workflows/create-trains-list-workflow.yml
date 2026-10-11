@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   Create-trains-list:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Setup java
@@ -59,7 +59,7 @@ jobs:
           path: trains.csv
 
   Check-trains-list:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - Create-trains-list
     outputs:
@@ -101,7 +101,7 @@ jobs:
           fi
 
   Reconcile-trains-list:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - Check-trains-list
     if: needs.Check-trains-list.outputs.changes_detected == 'true'

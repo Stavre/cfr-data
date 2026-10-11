@@ -22,7 +22,7 @@ permissions:
   contents: write
 jobs:
   Set-workflow-variables:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       year: ${{ steps.set-vars.outputs.year }}
       month: ${{ steps.set-vars.outputs.month }}
@@ -55,7 +55,7 @@ jobs:
           echo "workflow_run_timestamp=$TIMESTAMP"
 
   Check-raw-file-exists:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - Set-workflow-variables
     outputs:
@@ -80,7 +80,7 @@ jobs:
           fi
 
   Create-raw-station-dataset:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: needs.Check-raw-file-exists.outputs.file_exists != 'true'
     needs:
       - Set-workflow-variables

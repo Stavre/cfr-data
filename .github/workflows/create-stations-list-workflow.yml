@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   Create-stations-list:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Setup java
@@ -59,7 +59,7 @@ jobs:
           path: stations.csv
 
   Check-stations-list:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - Create-stations-list
     outputs:
@@ -101,7 +101,7 @@ jobs:
           fi
 
   Reconcile-stations-list:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - Check-stations-list
     if: needs.Check-stations-list.outputs.changes_detected == 'true'
